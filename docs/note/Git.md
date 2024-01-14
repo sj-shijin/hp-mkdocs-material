@@ -314,3 +314,13 @@ merge缺点：会产生额外的提交节点，分支图比较复杂。
 rebase优点：不会产生额外的提交记录，比较整洁。
 
 rebase缺点：改变了提交历史，避免在共享分支中使用。
+
+## submodule
+
+一个仓库（git-super）依赖另一个仓库（git-sub）进行构建
+
+```shell
+git submodule add "远程仓库地址" ["本地路径"]
+git submodule update [--init] --recursive
+git submodule foreach git pull
+```
