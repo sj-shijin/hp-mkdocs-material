@@ -1,5 +1,7 @@
 # OpenMP指令
 
+[OpenMPRefCard](OpenMPRefCard.pdf)
+
 ## 编译使用
 
 ```bash

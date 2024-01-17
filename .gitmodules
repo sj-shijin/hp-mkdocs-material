@@ -1,6 +1,6 @@
 [submodule "docs/note"]
 	path = docs/note
-	url = https://github.com/sj-shijin/note.git
+	url = git@github.com:sj-shijin/note.git
 [submodule "docs/literature"]
 	path = docs/literature
-	url = https://github.com/sj-shijin/literature.git
+	url = git@github.com:sj-shijin/literature.git

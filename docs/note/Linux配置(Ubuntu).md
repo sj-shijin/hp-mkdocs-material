@@ -1,4 +1,4 @@
-# linux环境配置与实用工具
+# Linux配置
 
 ## Ubuntu配置
 

@@ -1,4 +1,4 @@
-# vscode配置与实用插件
+# VSCode配置
 
 ## Vscode设置
 
