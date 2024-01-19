@@ -10,7 +10,7 @@ def add_newlines_to_formulas(file_path):
     # 公式前后一个空行
     content = re.sub(
         r"(?!`)\n*(\s*\$\$.+?\$\$)\n*(?!`)",
-        "\n\n\g<1>\n\n",
+        r"\n\n\g<1>\n\n",
         content,
         flags=re.DOTALL,
     )
