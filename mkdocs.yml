@@ -1,6 +1,10 @@
+repo_url: https://github.com/sj-shijin/hp-mkdocs-material.git
+repo_name: Source Code
+
 theme:
-        # icon:
-        #     logo: material/home
+        icon:
+                logo: material/home
+                repo: fontawesome/brands/github
         name: material
         language: zh
         palette:
@@ -140,6 +144,7 @@ nav:
                   - SAT问题:
                             - literature/SAT/SAT.md
                             - literature/SAT/HVC_2015_VSIDS/HVC_2015_VSIDS.md
+                  - MQGPU代码分析: literature/MScThesis_2017_MQGPU/MScThesis_2017_MQGPU_CR.md
 
 plugins:
         # - mkdocstrings:
@@ -150,7 +155,7 @@ plugins:
         # - offline # 离线本地搜索，和navigation.instant不能同时启用
 
 extra:
-        generator: false #删除页脚显示“使用 MkDocs 材料制造”
+        generator: true #删除页脚显示“使用 MkDocs 材料制造”
         social:
                 - icon: fontawesome/brands/github
                   link: https://github.com/sj-shijin
