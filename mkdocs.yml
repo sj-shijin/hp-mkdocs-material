@@ -105,6 +105,8 @@ markdown_extensions:
 # 下面的是需要自定义的内容，请不要修改上方的内容，上面都是在开启各种插件和功能
 
 site_name: Hello from ShiJin
+site_url: https://shijin.space
+site_description: ShiJin's website
 copyright: Copyright &copy; 2024 Shi Jin # 左下角的版权声明
 
 nav:
@@ -145,13 +147,20 @@ nav:
                             - literature/SAT/SAT.md
                             - literature/SAT/HVC_2015_VSIDS/HVC_2015_VSIDS.md
                   - MQGPU代码分析: literature/MScThesis_2017_MQGPU/MScThesis_2017_MQGPU_CR.md
+        - 博客:
+                  - blog/index.md
 
 plugins:
         # - mkdocstrings:
         #       handlers:
         #           python:
         #               paths: [src]
-        - search # 搜索插件
+        - search: # 搜索插件
+                  lang:
+                          - zh
+                          - en
+        - blog: # 博客插件
+                  blog_toc: true
         # - offline # 离线本地搜索，和navigation.instant不能同时启用
 
 extra:
