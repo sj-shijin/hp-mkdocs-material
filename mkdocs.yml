@@ -150,6 +150,13 @@ plugins:
                           - en
         - blog: # 博客插件
                   blog_toc: true
+                  categories_allowed:
+                          - 并行算法
+                          - 图算法
+                          - GPU算法
+                          - SAT问题
+                          - MQ问题
+
         # - offline # 离线本地搜索，和navigation.instant不能同时启用
 
 extra:
@@ -165,6 +172,8 @@ extra:
                 #     link: ShiJin:<sj_shijin@outlook.com>
                 #     name: Email
 
+extra_css:
+        - css/custom.css
 extra_javascript:
         - javascripts/mathjax.js
         - https://polyfill.io/v3/polyfill.min.js?features=es6
