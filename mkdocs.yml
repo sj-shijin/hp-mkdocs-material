@@ -8,12 +8,6 @@ theme:
         name: material
         language: zh
         palette:
-                # Palette toggle for automatic mode
-                - media: "(prefers-color-scheme)"
-                  toggle:
-                          icon: material/brightness-auto
-                          name: Switch to light mode
-
                 # Palette toggle for light mode
                 - media: "(prefers-color-scheme: light)"
                   scheme: default
@@ -37,8 +31,8 @@ theme:
                 - navigation.tabs # 页面上方的标签页
                 - navigation.tracking # 页面滚动时，导航栏高亮当前页面
                 # - navigation.sections # 使导航栏分块
-                # - navigation.expand # 默认展开导航
-                - navigation.prune # 只渲染当前页面的导航
+                - navigation.expand # 默认展开导航
+                # - navigation.prune # 只渲染当前页面的导航
                 - navigation.indexes # 章节索引
                 - toc.follow # 滚动的时候侧边栏自动跟随
                 - navigation.top # 返回顶部按钮
@@ -133,21 +127,16 @@ nav:
                             - note/Web/HTML.md
                             - note/Web/CSS.md
                             - note/Web/JavaScript.md
+                            - note/Web/Bootstrap5.md
+                            - MkDocs Material:
+                                      - note/Web/MkDocs Material/MkDocs Material.md
+                                      - note/Web/MkDocs Material/MarkDown页面设计.md
                   - MATLAB:
                             - note/MATLAB/MATLAB 基础.md
                             - note/MATLAB/MATLAB 绘图.md
                             - note/MATLAB/MATLAB 数值分析.md
                             - note/MATLAB/MATLAB 概率论与数理统计.md
-
         - 文献:
-                  - literature/期刊&会议.md
-                  - 并行算法:
-                            - literature/SPAA_2021_Parallel Shortest Paths/SPAA_2021_Parallel Shortest Paths.md
-                  - SAT问题:
-                            - literature/SAT/SAT.md
-                            - literature/SAT/HVC_2015_VSIDS/HVC_2015_VSIDS.md
-                  - MQGPU代码分析: literature/MScThesis_2017_MQGPU/MScThesis_2017_MQGPU_CR.md
-        - 博客:
                   - blog/index.md
 
 plugins:
