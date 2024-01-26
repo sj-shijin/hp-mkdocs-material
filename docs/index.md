@@ -6,25 +6,44 @@ hide:
     - footer
 ---
 
-# Hello from sj
+# Hello From ShiJin
 
-wait for processing
+<div class="grid cards" markdown>
 
-<div class="mdx-iconsearch" data-mdx-component="iconsearch">
-  <input
-    class="md-input md-input--stretch mdx-iconsearch__input"
-    placeholder="Search the icon and emoji database"
-    data-mdx-component="iconsearch-query"
-  />
-  <div class="mdx-iconsearch-result" data-mdx-component="iconsearch-result">
-    <div class="mdx-iconsearch-result__meta"></div>
-    <ol class="mdx-iconsearch-result__list"></ol>
-  </div>
+-   :material-language-cpp: __现代C++__
+
+    ---
+
+    - STL实用库、算法库和并发库
+    - 代码分析工具
+    - OpenMP
+
+    ---
+
+    [:material-arrow-right: 更多细节](./note/C++/C++新特性.md)
+
+-   :material-web: __静态网站__
+
+    ---
+
+    - HTML、CSS和JS
+    - Bootstrap5
+    - Material for Mkdocs
+
+    ---
+
+    [:material-arrow-right: 更多细节](./note/Web/HTML.md)
+
+-   :fontawesome-solid-book: __近期文献__
+
+    ---
+
+    - 并行算法
+    - GPU算法
+    - SAT问题
+
+    ---
+
+    [:material-arrow-right: 更多细节](./blog/index.md)
+
 </div>
-<small>
-  :octicons-light-bulb-16:
-  **Tip:** Enter some keywords to find icons and emojis and click on the
-  shortcode to copy it to your clipboard.
-</small>
-
-todo：设置搜索效果
