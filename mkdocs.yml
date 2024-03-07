@@ -161,7 +161,9 @@ plugins:
         - 图算法
         - GPU算法
         - SAT问题
+        - KISSAT
         - MQ问题
+        - 稀疏矩阵乘法
 
   # - offline # 离线本地搜索，和navigation.instant不能同时启用
 
