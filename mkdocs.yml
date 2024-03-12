@@ -162,13 +162,14 @@ plugins:
         - GPU算法
         - SAT问题
         - KISSAT
+        - Handbook of SAT
         - MQ问题
         - 稀疏矩阵乘法
 
   # - offline # 离线本地搜索，和navigation.instant不能同时启用
 
 extra:
-  generator: true #删除页脚显示“使用 MkDocs 材料制造”
+  generator: true #页脚显示“使用 MkDocs Material制造”
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/sj-shijin
