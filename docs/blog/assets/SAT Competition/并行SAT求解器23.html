@@ -25,12 +25,27 @@
 /* @theme am_yoimiya */div#\:\$p>svg>foreignObject>:where(section):not([root]){--color-code-bg:rgb(243,217,190);--color-coverbg:rgb(151,49,40);--color-few:rgb(239,145,99);--color-footer:rgb(140,140,140);--color-main:rgb(33,17,18);--color-much:rgb(97,30,30);--color-navbar-bg:rgb(236,194,155);--color-navbar-font:rgb(108,95,91);--color-quote:rgba(254,176,98,0.1);--color-title:rgb(255,255,255);--color-trans:rgb(151,49,40);--filter-b:brightness(30%) contrast(70%) grayscale(100%);--filter-c:brightness(0%) contrast(60%) grayscale(80%);--filter-e:brightness(0%) contrast(70%) grayscale(100%)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure>figcaption{position:absolute;border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=content],div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#\:\$p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#\:\$p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-class="cover_a" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" class="cover_a" style="--class:cover_a;--theme:am_yoimiya;--heading-divider:2,3;">
 <h1 id="%E5%B9%B6%E8%A1%8C%E5%88%86%E5%B8%83%E5%BC%8Fsat%E6%B1%82%E8%A7%A3%E5%99%A8sc23">并行/分布式SAT求解器(SC23)</h1>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" data-marpit-pagination="2" style="--paginate:true;--footer: *石晋* *2024.05.29*;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="5">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-class="cols2_ol_sq fglass" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" class="cols2_ol_sq fglass" data-marpit-pagination="2" style="--paginate:true;--footer: *石晋* *2024.05.29*;--class:cols2_ol_sq fglass;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="6">
+<h2 id="%E5%B9%B6%E8%A1%8Csat%E6%B1%82%E8%A7%A3%E7%9A%847%E4%B8%AA%E6%8C%91%E6%88%98">并行SAT求解的7个挑战</h2>
+
+<ul>
+<li>动态资源分配</li>
+<li>任务分解</li>
+<li>预处理</li>
+<li>知识分享</li>
+<li>整数分解：使用SAT判断大数分解</li>
+<li>特殊编码：除CNF之外的新编码</li>
+<li>从零开始：并行专用SAT算法和数据结构</li>
+</ul>
+<p>来源：<a href="./_%E5%B9%B6%E8%A1%8CSAT%E6%B1%82%E8%A7%A3%E5%99%A823.assets/Seven_Challenges_in_Parallel_SAT_Solving.pdf">Seven Challenges in Parallel SAT Solving</a></p>
+<footer> <em>石晋</em> <em>2024.05.29</em></footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" data-marpit-pagination="3" style="--paginate:true;--footer: *石晋* *2024.05.29*;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="6">
 <h2 id="sat%E6%B1%82%E8%A7%A3%E5%99%A8%E6%A6%82%E8%BF%B0">SAT求解器概述</h2>
 <p><img src="./_%E5%B9%B6%E8%A1%8CSAT%E6%B1%82%E8%A7%A3%E5%99%A823.assets/SAT%E6%B1%82%E8%A7%A3%E5%99%A8.svg" alt="#c" /></p>
 <footer> <em>石晋</em> <em>2024.05.29</em></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-class="cols-2" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" class="cols-2" data-marpit-pagination="3" style="--paginate:true;--footer: *石晋* *2024.05.29*;--class:cols-2;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="5">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-class="cols-2" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" class="cols-2" data-marpit-pagination="4" style="--paginate:true;--footer: *石晋* *2024.05.29*;--class:cols-2;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="6">
 <h3 id="prs">PRS</h3>
 <div class=ldiv>
 <ul>
@@ -93,7 +108,7 @@
 </div>
 <footer> <em>石晋</em> <em>2024.05.29</em></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" data-marpit-pagination="4" style="--paginate:true;--footer: *石晋* *2024.05.29*;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="5">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" data-marpit-pagination="5" style="--paginate:true;--footer: *石晋* *2024.05.29*;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="6">
 <h3 id="mallobsc22">Mallob(SC22)</h3>
 <ul>
 <li>
@@ -113,7 +128,7 @@
 </ul>
 <footer> <em>石晋</em> <em>2024.05.29</em></footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" data-marpit-pagination="5" style="--paginate:true;--footer: *石晋* *2024.05.29*;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="5">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-footer=" *石晋* *2024.05.29*" data-theme="am_yoimiya" data-heading-divider="2,3" lang="zh-CN" data-marpit-pagination="6" style="--paginate:true;--footer: *石晋* *2024.05.29*;--theme:am_yoimiya;--heading-divider:2,3;" data-marpit-pagination-total="6">
 <h3 id="mallobsc23">Mallob(SC23)</h3>
 <ul>
 <li>
