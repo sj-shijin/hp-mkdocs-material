@@ -1,0 +1,13 @@
+{
+    "markdown.marp.enableHtml": true,
+    "markdown.marp.themes": [
+        "./marpthemes/themes/am_blue.scss",
+        "./marpthemes/themes/am_green.scss",
+        "./marpthemes/themes/am_red.scss",
+        "./marpthemes/themes/am_dark.scss",
+        "./marpthemes/themes/am_brown.scss",
+        "./marpthemes/themes/am_purple.scss",
+        "./marpthemes/themes/am_template.scss",
+        "./marpthemes/themes/am_yoimiya.scss",
+    ],
+}
