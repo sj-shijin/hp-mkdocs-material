@@ -3,7 +3,7 @@ marp: true
 theme: am_yoimiya
 paginate: true
 headingDivider: [2,3]
-footer: \ *石晋* *2024.05.29*
+footer: \ *石晋* *2024.05.30*
 math: mathjax
 ---
 
