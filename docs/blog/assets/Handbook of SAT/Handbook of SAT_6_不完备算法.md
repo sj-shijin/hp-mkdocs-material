@@ -108,4 +108,4 @@ $$
 
 - 启发赋值算法，但几乎不出错
 
-可参考[第22章](https://shijin.space/blog/assets/Handbook%20of%20SAT/Handbook%20of%20SAT_22_%E4%B8%8E%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86%E5%AD%A6%E7%9A%84%E8%81%94%E7%B3%BB.html)详细介绍
+可参考[第22章](./Handbook%20of%20SAT_22_与统计物理学的联系.html)详细介绍
