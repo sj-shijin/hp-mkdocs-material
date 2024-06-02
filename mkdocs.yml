@@ -142,7 +142,7 @@ nav:
           - note/MATLAB/MATLAB 绘图.md
           - note/MATLAB/MATLAB 数值分析.md
           - note/MATLAB/MATLAB 概率论与数理统计.md
-  - 文献&代码:
+  - 博客:
       - blog/index.md
 
 plugins:
@@ -161,7 +161,7 @@ plugins:
         - 图算法
         - GPU算法
         - SAT问题
-        - KISSAT
+        - Kissat
         - Handbook of SAT
         - MQ问题
         - 稀疏矩阵乘法
