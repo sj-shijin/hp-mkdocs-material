@@ -165,6 +165,7 @@ plugins:
         - Handbook of SAT
         - MQ问题
         - 稀疏矩阵乘法
+        - 格密码
 
   # - offline # 离线本地搜索，和navigation.instant不能同时启用
 
